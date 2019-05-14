@@ -1,0 +1,2 @@
+# ProjectFrigg
+Example project
