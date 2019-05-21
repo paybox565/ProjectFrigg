@@ -1,5 +1,5 @@
 import axios from 'axios';
-import * as config from '@/shared/config.js';
+import * as config from '../../shared/config.js';
 
 export default {
 	namespaced: true,

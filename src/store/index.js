@@ -3,9 +3,9 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-import menu from '/modules/menu';
-import products from '/modules/products';
-import cart from '/modules/cart';
+import menu from './modules/menu';
+import products from './modules/products';
+import cart from './modules/cart';
 
 export const store = new Vuex.Store({
 	modules: {

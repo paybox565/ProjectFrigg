@@ -105,7 +105,6 @@
 <style lang="scss">
 
     @import './src/styles/bootstrap-custom.scss';
-    @import './src/assets/fonts/font-awesome.min.scss';
     @import './node_modules/bootstrap/scss/bootstrap.scss';
 
 </style>

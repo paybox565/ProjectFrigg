@@ -3,12 +3,12 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import About from "views/About.vue";
-import Form from "views/Form_template.vue";
-import ProductList from 'components/ProductsList.vue';
-import Product from 'components/Product.vue';
-import Cart from 'components/Cart.vue';
-import E404 from 'components/E404.vue';
+import About from "./views/About.vue";
+import Form from "./views/Form_template.vue";
+import ProductList from './components/ProductsList.vue';
+import Product from './components/Product.vue';
+import Cart from './components/Cart.vue';
+import E404 from './components/E404.vue';
 
 //import {store} from './store';
 

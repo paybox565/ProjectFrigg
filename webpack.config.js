@@ -3,7 +3,12 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    entry: './src/main.js',
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        publicPath: '/dist/',
+        filename: 'build.js'
+    },
     module: {
         rules: [
             {
@@ -48,7 +53,29 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9009,
+        historyApiFallback: true,
+        noInfo: true,
+        overlay: true
+    },
     plugins: [
         new VueLoaderPlugin()
     ]
 };
+
+if (process.env.NODE_ENV === 'production') {
+    module.exports.devtool = '#source-map';
+    module.exports.plugins = (module.exports.plugins || []).concat([
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: '"production"'
+            }
+        }),
+        new webpack.LoaderOptionsPlugin({
+            minimize: true
+        })
+    ])
+}
