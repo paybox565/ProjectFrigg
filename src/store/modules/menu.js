@@ -11,10 +11,6 @@ export default {
 				text: 'Your Cart'
 			},
 			{
-				url: '/checkout',
-				text: 'Order Now'
-			},
-			{
 				url: '/about',
 				text: 'About page'
 			},
