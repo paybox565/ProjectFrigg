@@ -1,6 +1,6 @@
 {
   "name": "project-frigg",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
