@@ -1,2 +1,2 @@
 # ProjectFrigg
-Example project
+Project using Vue.js with webpack
